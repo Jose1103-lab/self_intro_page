@@ -1,0 +1,305 @@
+:root{
+    --font-size: 16px;
+    --bg-color1: #ffffff;
+    --alt-bg-color: #efefef;
+    --alt-bg-color-tran: #d8d8d88a;
+    --alt-bg-color2: #fafafa;
+    --font-color1: #005277;
+    --contrast-bg:#00344d;
+    --font-color2: #000000;
+    --border-color: #7c7c7c;
+}
+
+.arvo-regular {
+    font-family: "Arvo", serif;
+    font-weight: 900;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+
+.arvo-regular-normal {
+    font-family: "Arvo", serif;
+    font-size: 16px;
+    word-spacing: 3px;
+    font-style: normal;
+}
+
+.arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    /* font-style: italic; */
+}
+
+li{
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.pas-link{ 
+    /* To all passive links */
+    text-decoration: none;
+    color: var(--font-color2);
+}
+
+
+/* From here the header---------------core---------------------------------- */
+
+.header-container{
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center ;
+    padding: 20px;
+    background-color: var(--bg-color1);
+    box-shadow: 1px 1px 15px var(--bg-color1) ;
+}
+
+.headernav {
+    /* border: 2px solid red;  */
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    width:fit-content ;
+}
+
+.head-link{
+    margin: 0 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--font-color2);
+    display: block;
+    padding: 10px 10px;
+    border-bottom: 2px solid var(--bg-color1);
+    transition: .5s;
+}
+
+.head-link:hover{
+    color: var(--font-color1);
+    border-bottom: 2px solid var(--font-color1);
+}
+
+header h1{
+    /* border: 2px solid red;  */
+    grid-column: 1/2;
+    align-content: center;
+    width: fit-content;
+    color: var(--font-color1);
+    text-wrap: nowrap;
+}
+
+/* From here the main feed------core-------------------------------- */
+main{
+    /* border: 1px solid red;  */
+    /* border-top: 1px solid var(--border-color);  */
+    border-bottom: 1px solid var(--border-color); 
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 100px 80% 125px;
+    align-content:start;
+}
+/* the aside module--------core---------------------------------- */
+.mn-aside{
+    grid-area: 1/1/2/2;
+    height: 100%;
+    width:100% ;
+    padding: 0;
+    background-color:var(--alt-bg-color);
+}
+
+/* From here the footer------------core-------------------------------------*/
+footer {
+    padding-top: 10px;
+    width: 100%;
+    background-color: var(--contrast-bg);
+    text-align: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:2fr .5fr;
+}
+
+.network{
+    grid-area: 1/3/2/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.copy{
+    grid-area: 2/2/3/3;
+    color: var(--bg-color1);
+    font-size: 10px;
+}
+
+footer img{
+    width: 35px;
+    height: 35px;
+}
+
+.p-lk-cont{
+    grid-area: 1/1/2/2;
+    justify-self:right ;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ft-lk-cont{
+    margin: 0 25px;
+    width:fit-content ;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: var(--bg-color1);
+}
+
+/* home page stuff ------------------------*/
+
+    /* side bar */
+.asd-it{
+    margin: 10px 10px 25px 10px;
+}
+
+/* main feed */
+.hero{
+    grid-area: 1/1/2/5;
+    position: relative;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.fd-cont{
+    grid-area:2/2/3/4 ;
+    margin: 0 10%;
+    padding: 5px 10px;
+    /* background-color: var(--alt-bg-color2); */
+}
+
+.hm-overlay{
+    padding: 70px 0;
+    padding-left: 10%;
+    border-radius: 5px;
+    position: absolute;
+    width: 60%;
+    top: 100px;
+    background-color: var(--alt-bg-color-tran);
+    display: grid;
+    grid-template-rows: 1fr .5fr 1fr;
+}
+
+.i-one{
+    /* border: 1px solid red; */
+    grid-row: 1/2 ;
+}
+.i-two{
+    /* border: 1px solid red; */
+    grid-row: 3/4 ;
+    justify-self:center;
+}
+
+.img1{   
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow:0 0 1000px  var(--font-color1);
+    float: right;
+    margin-left: 25px;
+}
+
+.mn-it{
+    margin-bottom:100px ;
+}
+
+.it-tecn{
+    background-color: #ffffff;
+    border: 1px solid var(--font-color1);
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px;
+    height: fit-content;
+    margin: 1px;
+}
+
+.tec-cont{
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* project page stuff ------------------------*/
+
+    /* side bar */
+.tool-bag{
+    margin: 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bag-table{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    }
+    td{
+        padding-left: 10px;
+        height: 30px;
+    }
+    td a {
+        /* border: 1px solid red; */
+        padding-right :70px;
+    }
+    td:hover{
+        background-color: var(--border-color);
+}
+
+
+    /* main feed */
+.mn-pvw{
+    /* border: 1px solid red;  */
+    background-color:var(--alt-bg-color2);
+    grid-column: 2/3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content: flex-start;
+}
+
+.item-preview:hover{
+    background-color: var(--bg-color1);
+    box-shadow: 5px 3px 10px var(--border-color);
+}
+
+.item-preview{
+    width: 300px;
+    background-color: var(--bg-color1);
+    margin: 20px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+    
+}
+.item-preview img{
+    border-radius: 5px;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 10px;
+}
+.item-preview div{
+    /* border: 1px solid red; */
+    height: 20%;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
+    text-wrap:wrap;    
+}
+
+
+/* contact page stuff -----------------------------*/

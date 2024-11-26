@@ -306,3 +306,14 @@ svg{
   width: 35px;  
 }
 
+.preview-box{
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 400px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px var(--border-color);
+    background-color: var(--alt-bg-color2);
+}

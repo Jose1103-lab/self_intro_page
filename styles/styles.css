@@ -316,4 +316,6 @@ svg{
     border-radius: 10px;
     box-shadow: 2px 3px 5px var(--border-color);
     background-color: var(--alt-bg-color2);
+    display: grid;
+    grid-template:1fr 0.5fr / 1fr 1fr;
 }

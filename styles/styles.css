@@ -260,7 +260,6 @@ footer img{
         background-color: var(--border-color);
 }
 
-
     /* main feed */
 .mn-pvw{
     /* border: 1px solid red;  */
@@ -306,11 +305,19 @@ svg{
   width: 35px;  
 }
 
-.preview-box{
-    z-index: 2;
+/* project preview style */
+
+.preview-page{
+    background-color: var(--alt-bg-color-tran);
+    width: 100%;
+    height:100% ;  
     position: absolute;
-    top: 20%;
-    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-box{
     height: 400px;
     width: 800px;
     border-radius: 10px;
@@ -318,4 +325,12 @@ svg{
     background-color: var(--alt-bg-color2);
     display: grid;
     grid-template:1fr 0.5fr / 1fr 1fr;
+}
+
+.preview-img{
+    grid-area: 1/1/2/2;
+    border-radius: 8px 0 0 8px ;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

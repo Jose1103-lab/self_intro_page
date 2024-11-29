@@ -2,29 +2,30 @@ console.log("Script is running");
 let activeOn = false
 
 function proj_preview(){
-    const exist = document.querySelector(".preview-box")
+    const exist = document.querySelector(".preview-page")
     const main = document.getElementsByTagName("main")
     if (activeOn === true){
-        exist.remove(); //remove the preview panel
-        document.body.style.overflow = "scroll" //stops scrolling
+        exist.remove(); //removes the preview panel
+        // document.body.style.overflow = "scroll" //stops scrolling
         activeOn = false
     }else{
         const preview_cont = document.createElement("div")
-        const img_caroussel = document.createElement("img")
-        img_caroussel.setAttribute("src", "images/placeholder.png")
-        img_caroussel.style.width = "100%"
-        img_caroussel.style.height = "auto"
-        img_caroussel.style.objectFit = "cover"
-        preview_cont.appendChild(img_caroussel)
-        preview_cont.classList.add("preview-box")
+        const preview_box = document.createElement("div")
+        preview_cont.classList.add("preview-page")
+        preview_box.classList.add("preview-box")
         main[0].appendChild(preview_cont)
-        document.body.style.overflow = "hidden"
-        
-        
+        preview_cont.appendChild(preview_box)
+        // document.body.style.overflow = "hidden"
+        const img_caroussel = document.createElement("img")
+        img_caroussel.classList.add("preview-img")
+        img_caroussel.setAttribute("src", "images/placeholder.png")
+        preview_box.appendChild(img_caroussel)
         
         activeOn = true
     }
 }
 
-let preview_call = document.querySelectorAll(".item-preview"); //take care of it later
-preview_call.forEach((item) => addEventListener("click", proj_preview))
+let preview_call = document.querySelectorAll(".item-preview"); //take care of it later; 
+//each time i click some  where the popup opens up
+preview_call.forEach((item) => {item.addEventListener("click", proj_preview)})
+// preview_call.onclick = () => proj_preview()  

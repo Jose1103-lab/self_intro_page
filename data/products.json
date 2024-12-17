@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Store page",
+    "category": "Sales",
+    "description": "High-performance laptop with a fast processor and ample storage.",
+    "languages": "JavaScript/React"
+  },
+  {
+    "name": "Market page",
+    "category": "Inventory Management",
+    "description": "Portable tablet for browsing, entertainment, and productivity.",
+    "languages": "JavaScript/React"
+  },
+  {
+    "name": "Drugstore page",
+    "category": "Sales",
+    "description": "Latest smartphone with advanced camera and powerful performance.",
+    "languages": "Python(Django)/React/Angular"
+  },
+  {
+    "name": "Texts simplifier",
+    "category": "LLM module",
+    "description": "Wireless noise-canceling headphones for immersive audio.",
+    "languages": "Python"
+  },
+  {
+    "name": "Hardware store page",
+    "category": "Sales",
+    "description": "Fitness tracker and smartwatch with heart rate monitoring.",
+    "languages": "C#/.NET/Angular"
+  }
+]

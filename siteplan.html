@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan del Sitio de Natura</title>
+    <style>
+        /* CSS HEX */
+        :root{
+            --tang-blue: rgb(3, 98, 231);
+            --blue-gray: #679AD0ff;
+            --white: #FFFFFFff;
+            --gray-white: #f1f1f1;
+            --saffron: #ffd105;
+            --emerald: rgb(0, 214, 104);
+            --onix: #000000;
+
+        }
+
+        /* SCSS Gradient
+$gradient-top: linear-gradient(0deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-right: linear-gradient(90deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-bottom: linear-gradient(180deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-left: linear-gradient(270deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-top-right: linear-gradient(45deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-bottom-right: linear-gradient(135deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-top-left: linear-gradient(225deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-bottom-left: linear-gradient(315deg, #0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff);
+$gradient-radial: radial-gradient(#0B5DCCff, #679AD0ff, #FFFFFFff, #F2E2B7ff, #ECBC47ff, #14C267ff); */
+
+        .header{
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color:var(--gray-white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p,
+        ul{
+            margin-left: 20px;
+        }
+        
+        .color-palette {
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+        .color-palette li {
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+        }
+
+        #color-1{
+            background-color: var(--tang-blue);
+        }
+        #color-2{
+            background-color: var(--blue-gray);
+            
+        }
+        #color-3{
+            background-color: var(--white);
+            
+        }
+        #color-4{
+            background-color: var(--gray-white);
+            
+        }
+        #color-5{
+            background-color: var(--saffron);
+            
+        }
+        #color-6{            
+            background-color: var(--emerald);
+        }
+        
+        section {
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 5px solid var(--saffron);
+            background-color: var(--white);
+        }
+
+        section:hover {
+            transform: translateX(3px);
+            box-shadow: -3px 5px 15px var(--emerald);
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="../public/images/original.jpeg" alt="Logo de Natura" width="100">
+            <h1>Natura - Plan de Sitio Web</h1>
+
+        </div>
+
+        <section>
+            <h2>Propósito y Metas del Sitio</h2>
+            <p>El sitio web de Natura tiene como objetivo proporcionar a los usuarios información sobre espacios verdes
+                locales, parques y reservas naturales. Sus metas principales son:</p>
+
+        </section>
+
+        <section>
+            <h2>Modulos</h2>
+            <ul>
+                <li>Finanzas y contabilidad. El módulo de contabilidad es el más básico para las empresas.</li>
+                <li>Inventario.</li>
+                <li>Almacén.</li>
+                <li>CRM.</li>
+                <li>Producción.</li>
+                <li>Cadena de suministro.</li>
+                <li>RRHH.</li>
+                <li>Proyectos</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Mapa del Sitio</h2>
+            <p>A continuación se presenta la estructura planificada del sitio web:</p>
+            <ul>
+                <li>Inicio</li>
+                <li>Sobre Nosotros</li>
+                <li>Planes y Precios</li>
+                    <ul>
+                        <li>Nombre del ...</li>
+                        <li>Nombre del ...</li>
+                        <li>...</li>
+                    </ul>
+                </li>
+                <li>Blog/Noticias (Opcional)</li>
+                <li>Contacto</li>
+                <li>Acceder (Loggeo)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Paleta de colores y fuentes</h2>
+            <p>A continuación se presentan las fuentes:</p>
+            <ul>
+                <li>Titulos</li>
+                <li>Parrafos</li>
+            </ul>
+            <p>A continuación se presenta la paleta de colores:</p>
+            <ul class="color-palette">
+                <li id="color-1">Azul-Tang: #0B5DCC</li>
+                <li id="color-2">Gris-Azulado: #679AD0</li>
+                <li id="color-3">Blanco: #FFFFFF</li>       
+                <li id="color-4">Blanco-grisaceo: #F2E2B7</li>
+                <li id="color-5">Azafrán: #ECBC47</li>
+                <li id="color-6">Esmeralda: #14C267</li>
+        </section>
+
+        <section>
+            <h2>Estrategia de Contenido</h2>
+            <p>El contenido se centrará en proporcionar información precisa y atractiva sobre cada ubicación. Esto
+                incluye:</p>
+        </section>
+
+    </div>
+</body>
+
+</html>

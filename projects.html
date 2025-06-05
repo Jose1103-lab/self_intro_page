@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/icons/p-logo.png">
+    <link rel="icon" href="images/icons/j-logo.png">
     <script src="scripts/engine.js" defer></script>
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
+
     <header class="header-container">
-        <h1>JB-Bio | Projects</h1>
+        <h1 class="arvo-regular">JB-Bio | Projects</h1>
         <nav class="arvo-regular-italic headernav">
             <a href="https://jose1103-lab.github.io/self_intro_page/" class="head-link">Home</a>
             <a href="https://jose1103-lab.github.io/self_intro_page/projects.html" class="head-link">Projects</a>
@@ -88,32 +89,26 @@
 
         <aside class="mn-aside">
             <div class="tl-bag-container ">
-                <nav class="tool-bag">
-                    <table class="bag-table">
-                        <tr>
-                            <th>Languages</th>
-                        </tr>
-                        <tr>
-                            <td> <span><a href="" class="pas-link">Python</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="" class="pas-link">Javascript</a></td>
-                        </tr>
-                            <td><a href="" class="pas-link">HTML/CSS</a></td>
-                        <tr>
-                            <th>Technologies</th>
-                        </tr>
-                        <tr>
-                            <td><a href="" class="pas-link">SQL modules</a></td>
-                        </tr>
-                        <tr><td>
-                            <a href="" class="pas-link">Ai modules</a></td>
-                        </tr>
+                <div class="tool-bag">
+                        <h3 class="ls-title">Languages</h3>
                         
-                    </table>
-                </nav>
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="html" class="ls-row"> HTML/CSS</input></div>                       
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="javascript" class="ls-row"> Javascript</input></div>                       
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="python" class="ls-row"> Python</input></div>                       
+                        
+                        <h3 class="ls-title">Technologies</h3>
+                        
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="django" class="ls-row"> Django Apps</input></div>                       
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="react" class="ls-row"> React</input></div>                       
+                        <!-- <div class="ls-cont"><input type="checkbox" name="filter" value="angular" class="ls-row"> Angular</input></div>                       
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="vue" class="ls-row"> Vue</input></div>                       
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="next" class="ls-row"> Next</input></div>                        -->
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="sql_modules" class="ls-row"> SQL modules</input></div>
+                        <!-- <div class="ls-cont"><input type="checkbox" name="filter" value="ai_modules" class="ls-row"> Ai modules</input></div>
+                        <div class="ls-cont"><input type="checkbox" name="filter" value="llm_modules" class="ls-row"> LLM modules</input></div> -->
+                        <div><button class="ls-row">&times;Clear all</button></div>
+                </div>
             </div>
-        
         </aside>
         
     </main>

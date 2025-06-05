@@ -1,5 +1,7 @@
 :root{
-    --font-size: 16px;
+    --p-font-size: 2em;
+    --t2-font-size: 2em;
+    --t1-font-size: 3em;
     --bg-color1: #ffffff;
     --alt-bg-color: #efefef;
     --alt-bg-color-tran: #d8d8d88a;
@@ -17,16 +19,16 @@
 .arvo-regular {
     font-family: "Arvo", serif;
     font-weight: 900;
-    font-size: 12px;
     font-style: normal;
     letter-spacing: 1.5px;
+    /* font-size: 12px; */
 }
 
 .arvo-regular-normal {
     font-family: "Arvo", serif;
-    font-size: 16px;
     word-spacing: 3px;
     font-style: normal;
+    /* font-size: 16px; */
 }
 
 .arvo-regular-italic {
@@ -50,6 +52,7 @@ li{
     text-decoration: none;
     color: var(--font-color2);
 }
+
 
 
 /* From here the header---------------core---------------------------------- */
@@ -176,6 +179,10 @@ footer img{
     height: auto;
 }
 
+.main-header{
+    font-size: var(--t1-font-size);
+}
+
 .fd-cont{
     grid-area:2/1/3/3 ;
     padding: 10px 20%;
@@ -184,18 +191,18 @@ footer img{
 .hm-overlay{
     padding: 70px 0;
     padding-left: 10%;
-    border-radius: 5px;
     position: absolute;
     width: 60%;
-    top: 100px;
-    background-color: var(--alt-bg-color-tran);
+    top: 75px;
     display: grid;
     grid-template-rows: 1fr .5fr 1fr;
+    /* background-color: var(--alt-bg-color-tran); */
 }
 
 .i-one{
     /* border: 1px solid red; */
     grid-row: 1/2 ;
+    width: fit-content;
 }
 .i-two{
     /* border: 1px solid red; */
@@ -238,26 +245,18 @@ footer img{
     /* side bar */
 .tool-bag{
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 5px;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 }
 
-.bag-table{
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    }
-    td{
-        padding-left: 10px;
-        height: 30px;
-    }
-    td a {
-        /* border: 1px solid red; */
-        padding-right :70px;
-    }
-    td:hover{
-        background-color: var(--border-color);
+.ls-row{
+    border: 1px solid red;
+    margin-left: 15px;
+}
+.ls-row:hover{
+    background-color: var(--border-color);
 }
 
     /* main feed */
